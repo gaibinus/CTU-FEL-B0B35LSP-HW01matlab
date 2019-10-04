@@ -1,4 +1,4 @@
-## Použitie
+## Použitie:
 1. otvor directory v Matlabe (nemalo by záležať na verzii)
 2. otvor skript *formulaFinder.m* (zvyšok sú volané funkcie)
 3. zmeň kód morzeovky za svoj, zachovaj apostrofy na krajoch
