@@ -11,6 +11,7 @@
 - Morzeovka sa doplní na 2. mocninu a minimalizuje DNC s využitím Quine-McCluskey algoritmu
 - Formule sa hľadajú spomenutým algoritmom ako **SOP** (Gollovej **DNF** Disjunktivní normální forma)
 - Výstupom sú dve formule a) morzeovka b) stop-bit so Šusta-friendly notáciou (ako v prezentácii)
+- Správnosť som testoval porovnaním s materiálmi nie priamo na Quartuse (ak nejakú nájdete, rád opravím)
 
 ## Pre matlab nováčikov:
 ![matlab help](https://github.com/gaibinus/CTU-FEL-B0B35LSP-HW01matlab/blob/master/matlabHowTo.png)
