@@ -12,19 +12,19 @@ stop = zeros(1, morseSize);
 stop(size(morse,2) : end) = 1;
 stop = sprintf('%d', stop);
 
-% expend moorse with '-' (dnc) to match length of 2^6
+% expand moorse with '-' (dnc) to match 2. power length
 morse = [morse repmat('-', 1, morseSize - size(morse,2))];
 
 % minimalize and SOP morse truth table
 [morseSOP, ~, ~, morse] = minTruthtable(morse, 'ev');
 
-% sop char array to formula
+% SOP char array to formula, display
 morseFormula = SOP2formula(morseSOP);
-
-% minimalize and SOP morse truth table, display
-[stopSOP, ~, ~, stop] = minTruthtable(stop, 'ev');
 disp(['Morse formula: ' morseFormula]);
 
-% minimalize and SOP stop bit truth table, display
+% minimalize and SOP stop bit truth table
+[stopSOP, ~, ~, stop] = minTruthtable(stop, 'ev');
+
+% SOP char array to formula, display
 stopFormula = SOP2formula(stopSOP);
 disp(['Stop  formula: ' stopFormula]);
