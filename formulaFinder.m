@@ -19,12 +19,14 @@ morse = [morse repmat('-', 1, morseSize - size(morse,2))];
 [morseSOP, ~, ~, morse] = minTruthtable(morse, 'ev');
 
 % SOP char array to formula, display
-morseFormula = SOP2formula(morseSOP);
-disp(['Morse formula: ' morseFormula]);
+[morseSusta, morseVhdl] = SOP2formula(morseSOP);
+disp(['Morse Susta  f = ' morseSusta]);
+disp(['Morse VHDL   f = ' morseVhdl]);
 
 % minimalize and SOP stop bit truth table
 [stopSOP, ~, ~, stop] = minTruthtable(stop, 'ev');
 
 % SOP char array to formula, display
-stopFormula = SOP2formula(stopSOP);
-disp(['Stop  formula: ' stopFormula]);
+[stopSusta, stopVhdl] = SOP2formula(stopSOP);
+disp(['Stop Susta   f = ' stopSusta]);
+disp(['Stop VHDL    f = ' stopVhdl]);
