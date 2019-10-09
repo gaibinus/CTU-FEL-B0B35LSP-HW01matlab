@@ -10,8 +10,8 @@
 - Skript samostatne vygeneruje stop-bit vektor, jeho formula sa generuje rovnako ako tá morzeovky
 - Morzeovka sa doplní na 2. mocninu a minimalizuje DNC s využitím Quine-McCluskey algoritmu
 - Formule sa hľadajú spomenutým algoritmom ako **SOP** (Gollovej **DNF** Disjunktivní normální forma)
-- Výstupom sú dve formule ***a)** morzeovka **b)** stop-bit* so Šusta-friendly notáciou (ako v prezentácii)
-- Správnosť som testoval porovnaním s materiálmi nie priamo na Quartuse (treba proste otestovať)
+- Výstupom sú dve formule ***a)** morzeovka **b)** stop-bit* so Šusta-friendly a VHDL notáciou 
+- Správnosť som testoval porovnaním s materiálmi a aj priamo na Quartuse cez VWF simulátor
 
 ## Pre matlab nováčikov:
 ![matlab help](https://github.com/gaibinus/CTU-FEL-B0B35LSP-HW01matlab/blob/master/matlabHowTo.png)
